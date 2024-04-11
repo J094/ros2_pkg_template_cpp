@@ -13,12 +13,12 @@ namespace ros2_pkg_template_cpp
 
 NodeTemplate::NodeTemplate(const rclcpp::NodeOptions & options) : rclcpp::Node("template", "", options)
 {
-  RCLCPP_INFO(get_logger(), "Create motion node...");
+  RCLCPP_INFO(get_logger(), "Create template node...");
 
   DeclareParameters();
   GetParameters();
 
-  RCLCPP_INFO(get_logger(), "Create motion node done.");
+  RCLCPP_INFO(get_logger(), "Create template node done.");
 
   Run();
 }
